@@ -1,0 +1,367 @@
+/* 头部开始 */
+header{
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    position: fixed;
+    z-index: 999;
+}
+.header_center{
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.mean{
+    display: none;
+}
+.logo{
+    display: block;
+    width: 120px;
+    height: 44px;
+    margin-top: 20px;
+    background: yellowgreen;
+    /* float: left; */
+}
+.nav_box{
+    width: 375px;
+    height: 80px;
+    margin-left: 40px;
+    /* float: left; */
+    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+.nav_box li{
+    height: 80px;
+    margin:0 10px;
+    text-align: center;
+    float: left;
+}
+.nav_box li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 80px;
+    font-size: 14px;
+    color:#684029;
+    text-decoration: none;
+}
+.nav_box li:hover a{
+    color: #BB9772;
+}
+.header_R{
+    width: 215px;
+    height: 80px;
+    /* float: right; */
+    text-decoration: none;
+    display: block;
+}
+.dizhi{
+    width: 84px;
+    height: 80px;
+    text-align: center;
+    float: left;
+}
+.dizhi a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color:#684029;
+    text-decoration: none;
+    line-height: 80px;
+}
+.dizhi a .iconfont{
+    font-size: 14px;
+    color:#684029;
+    transition: all 1s;
+}
+.dizhi:hover .iconfont{
+    transform: rotate(-30deg);
+}
+.denglu{
+    width: 80px;
+    height: 80px;
+    float: left;
+    text-align: center;
+    line-height: 78px;
+    text-decoration: none;
+}
+.denglu a{
+    font-size: 14px;
+    color:#684029;
+    text-decoration: none;
+}
+.denglu a:hover{
+    color: #BB9772;
+}
+.denglu span{
+    font-size: 14px;
+    color:#684029;
+}
+.car{
+    width: 40px;
+    height: 80px;
+    float: left;
+    text-align: center;
+}
+.car a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+.car a .iconfont{
+    font-size: 20px;
+    color: #3E2416;
+    line-height: 80px;
+    text-decoration: none;
+}
+/* 头部结束 */
+/* banner开始 */
+.banner{
+    width: 100%;
+    height: 580px;
+    background: yellow;
+    position: relative;
+}
+.banner a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.banner a img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+/* banner结束 */
+/* pc大屏 小于1200px */
+@media screen and (max-width: 1200px) {
+    .header_center{
+        width: 100%;
+        padding: 0 100px;
+    }
+    .logo{
+        width: 120px;
+        margin-top: 20px;
+        background: yellowgreen;
+    }
+    .nav_box{
+        width: 375px;
+        height: 80px;
+        margin-left: 40px;
+        float: left;
+        display: block;
+    }
+    .nav_box li{
+        width: auto;
+    }
+    .header_R{
+        width: 215px;
+        height: 80px;
+        float: right;
+        text-decoration: none;
+        display: block;
+    }
+    .banner{
+        width: 100%;
+        height: 580px;
+        background: yellow;
+        position: relative;
+    }
+    .banner a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .banner a img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+}
+/* pc小屏 小于992px和大于1200px*/
+@media screen and (max-width: 992px) and (min-width: 1200px){
+    .header_center{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .logo{
+        width: 120px;
+        margin-top: 20px;
+        background: yellowgreen;
+    }
+    .nav_box{
+        width: 375px;
+        height: 80px;
+        margin-left: 40px;
+        float: left;
+        display: block;
+    }
+    .nav_box li{
+        width: auto;
+    }
+    .header_R{
+        width: 215px;
+        height: 80px;
+        float: right;
+        text-decoration: none;
+        display: block;
+    }
+    .banner{
+        width: 100%;
+        height: 580px;
+        background: yellow;
+        position: relative;
+    }
+    .banner a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .banner a img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+}
+/* 平板 大于768px和小于992px */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .header_center{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .logo{
+        width: 120px;
+        background: yellowgreen;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .nav_box{
+        width: 375px;
+        height: 80px;
+        margin-left: 40px;
+        float: left;
+        display: none;
+    }
+    .nav_box li{
+        width: auto;
+    }
+    .header_R{
+        width: 215px;
+        height: 80px;
+        float: right;
+        text-decoration: none;
+        display: none;
+    }
+    .mean{
+        width: 50px;
+        height: 80px;
+        text-align: center;
+        display: block;
+    }
+    .mean a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+    }
+    .mean a .iconfont{
+        font-size: 22px;
+        color: #684029;
+        line-height: 80px;
+    }
+    .mean a:hover .iconfont{
+        color: #BB9772;
+    }
+    .banner{
+        width: 100%;
+        height: 580px;
+        background: yellow;
+        position: relative;
+    }
+    .banner a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .banner a img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+}
+/* 移动端  小于768px*/
+@media screen and (max-width: 768px){
+    .header_center{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .logo{
+        width: 120px;
+        background: yellowgreen;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .nav_box{
+        width: 375px;
+        height: 80px;
+        margin-left: 40px;
+        float: left;
+        display: none;
+    }
+    .nav_box li{
+        width: auto;
+    }
+    .header_R{
+        width: 215px;
+        height: 80px;
+        float: right;
+        text-decoration: none;
+        display: none;
+    }
+    .mean{
+        width: 50px;
+        height: 80px;
+        text-align: center;
+        display: block;
+    }
+    .mean a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+    }
+    .mean a .iconfont{
+        font-size: 22px;
+        color: #684029;
+        line-height: 80px;
+    }
+    .mean a:hover .iconfont{
+        color: #BB9772;
+    }
+    .banner{
+        width: 100%;
+        height: 580px;
+        background: yellow;
+        position: relative;
+    }
+    .banner a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .banner a img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+}
